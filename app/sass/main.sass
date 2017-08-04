@@ -32,6 +32,8 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
+	background-color: #ECEFF1
+	color: #717a8f
 	line-height: 1.75
 	font-family: $default-font
 	overflow-x: hidden
@@ -41,5 +43,21 @@ body
 	display: block
 	max-width: 100%
 	height: auto
+
+svg:not(:root)
+	overflow: hidden
+	
+header
+	box-shadow: 0 2px 5px rgba(0,0,0,0.25)
+	position: relative
+	z-index: 100
+
+.logo
+	height: 2rem
+	margin: 1.5rem 0 1.45rem 0
+	display: block
+
+.menu-second
+	background-color: $accent
 
 @import "media" // Всегда в конце
