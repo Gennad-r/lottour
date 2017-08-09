@@ -41,6 +41,9 @@ body
 section
 	background-color: #ECEFF1
 	padding: 2rem 0
+	h2
+		margin-top: 0
+		line-height: 2rem
 
 h1, h2, h3
 	text-align: center
@@ -59,7 +62,13 @@ p
 	font-weight: normal
 	line-height: 1.5rem
 	margin: 0 0 1rem
-
+	a
+		font-weight: bold
+a
+	color: inherit
+	&:hover
+		text-decoration: none
+		color: inherit
 .img-responsive
 	display: block
 	max-width: 100%
@@ -174,6 +183,28 @@ header
 		background-color: rgba(0,0,0,.5)
 
 /* ------------------------- owl block ------------------*/
+/* ------------------------- mm block ------------------*/
+.mm-menu
+	.mm-navbar
+		line-height: 2rem
+		height: auto
+		a.mm-title
+			font-weight: 300
+			color: $accent
+			font-size: 2rem
+.mm-listview
+    font: inherit
+    font-size: 1rem
+    line-height: 1.2rem
+    li
+    	a
+    		color: $text-color
+.mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
+    margin-top: 0
+
+
+
+/* ------------------------- mm block ------------------*/
 /* ------------------------- overview block ------------------*/
 .overview
 	background: #fff
@@ -185,6 +216,46 @@ header
 
 
 /* ------------------------- overview block ------------------*/
+/* ------------------------- best tours block ------------------*/
+.card
+	margin-bottom: 1.4rem
+.card-holder
+	border-radius: 3px
+	background-color: #fff 
+	overflow: hidden
+	box-shadow: 0 1px 1px lighten($text-color, 20%)
+.card-image
+	a
+		width: 100%
+		height: 100%
+		display: block
+	.img-responsive
+		display: inline-block
+.card-content
+	height: 8.5rem
+	overflow: hidden
+	padding: 1rem
+	position: relative
+	h3
+		text-align: left
+		font-size: 1.25rem
+		line-height: 1.5rem
+		color: $accent
+		margin: 0
+	p
+		margin: 0
+		line-height: 1.2rem
+	&:after
+		content: ""
+		position: absolute
+		width: 100%
+		height: 2rem
+		bottom: 0
+		left: 0
+		background: linear-gradient(to top, #fff, rgba(#fff, .1))
+
+.card-details
+	margin: .4rem 0 .3rem
 /* ------------------------- best tours block ------------------*/
 
 
