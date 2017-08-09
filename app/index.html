@@ -15,144 +15,147 @@
 	<link href="/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
 
 	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
+	<meta name="theme-color" content="#0b76cc">
 	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#0b76cc">
 	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#0b76cc">
 
 	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 
 </head>
 
 <body>
-        <header>
-            <div class="menu-first hidden-xs">
-                <div class="container">
-                    <div class="row">
-                        <div class="">
-                            <ul class="nav nav-pills right">
-                                <li>
-                                    <a href="/" target="_self" class="language">RU</a>
-                                </li>
-                                <li>
-                                    <a href="/zh/" target="_self" class="language">AZ</a>
-                                </li>
-                            </ul>
-                            <ul class="nav nav-pills">
-                                <li>
-                                    <a href="#/about" ui-sref="about" ui-sref-active="active" target="_self">About Lottour</a>
-                                </li>
-                                <a href="#/contact" ui-sref="contact" ui-sref-active="active" target="_self">Contacts</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="menu-second">
-            <div class="container">
-                <div class="row">
-                    <div class="">
-                        <nav class="navbar right">
-                            <ul class="nav navbar-nav hidden-xs">
-                                <li>
-                                    <a href="" class="menu-toggle button-search" data-ripple-centered="true" target="_self">
-                                        <i class="md md-search"></i>
-                                    </a>
-                                </li>
-                                <li ui-sref-active="active">
-                                    <a href="#/tours" ui-sref="tours.list" ui-sref-active="active" target="_self">
-                                        Tours                                        </a>
-                                    </li>
-                                    <li ui-sref-active="active">
-                                        <a href="#/countries" ui-sref="countries.list" ui-sref-active="active" target="_self">
-                                            Countries                                        </a>
-                                        </li>
-                                        <li ui-sref-active="active">
-                                            <a href="#/cities" ui-sref="cities.list" ui-sref-active="active" target="_self">
-                                                Cities                                        </a>
-                                            </li>
-                                            <li ui-sref-active="active">
-                                                <a href="#/sights" ui-sref="sights.list" ui-sref-active="active" target="_self">
-                                                    Sights                                        </a>
-                                                </li>
-                                            </ul>
-                                            <ul class="nav navbar-nav visible-xs">
-                                                <li>
-                                                    <a href="" class="button-search">
-                                                        <i class="md md-search"></i>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="" class="button-menu">
-                                                        <i class="md md-menu"></i>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                        <a class="navbar-brand" href="#/" ui-sref="index.main">
-                                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 206 64" enable-background="new 0 0 206 64" xml:space="preserve" class="logo">
-                                                <path class="logo-svg" fill="#ffffff" d="M204.1,52c0-0.2,0-0.4,0-0.6v-1.4l-0.9,1c-0.8,0.9-5.3,5.5-8.3,6.3c-0.8,0.2-1.7,0.4-2.5,0.4
-                                                c-3.2,0-5.6-1.8-6.3-4.6c-0.6-2.6-0.2-4.4,1.5-6.3c0.6-0.7,0.5-2.5-0.5-3.5l-0.2-0.2l-0.3,0.1c-0.9,0.3-1.7,0.4-2.5,0.4
-                                                c-1.5,0-2.8-0.5-3.6-1.4c-0.8-0.9-1.1-2.1-0.9-3.5l0.1-0.5l-0.5,0c-0.7-0.1-1.3-0.1-2-0.1c-2.1,0-3.9,0.3-5.3,0.8l-0.3,0.1l0,0.3
-                                                c-0.3,5,1.9,7.2,3.9,8.2c1.3,3.6-0.3,6.8-5,9.8c-1.3,0.8-2.7,1.2-4.1,1.2c-2.7,0-5.1-1.5-6.3-4c-1.4-3-0.9-8.4,1.4-16.1l0.2-0.7
-                                                l-0.8,0.1c-1.8,0.2-4.9,0.8-6.7,1.2l-0.3,0.1l-0.1,0.3c-1.4,6.5-2.1,11.3-1.1,14.9c0.3,1,0.6,2,1,2.8c-1,1.1-2.2,1.7-3.4,1.7
-                                                c-2.4,0-4.9-2.2-5.9-4.3c-1.4-3-0.9-8.4,1.4-16.1l0.2-0.7l-0.8,0.1c-1.8,0.2-4.9,0.8-6.7,1.2l-0.3,0.1l-0.1,0.3
-                                                c-0.9,4.2-1.7,8.6-1.5,12.2c-1.3,2.1-4.1,3.6-6.6,3.6c-0.7,0-1.3-0.1-1.8-0.3c1.1-3.8,1.2-10.9-1.2-14.9c-1.1-1.8-2.7-2.9-4.3-2.9
-                                                c-0.7,0-1.4,0.2-2.1,0.7c-0.3-0.1-0.6-0.1-1-0.1c-2,0-6.2,0.9-9.1,4.4c-2.7,3.2-3.5,7.7-2.5,13.3c0.1,0.4,0.2,0.9,0.3,1.3
-                                                c-1.3,1.8-3.2,2.7-5.7,2.7c-0.6,0-1.2,0-1.8-0.1c-2-0.3-3.7-1.6-5.1-3.9c-2.7-4.6-3.9-12.7-3.4-23c9.1-0.3,18.1-1,26.8-2.1
-                                                c39.5-4.9,59.1-15,73-24.2c1.2-0.8,1.7-1.5,1.6-2.3c-0.1-1.1-1.4-1.7-2.4-2.1c-1-0.4-2.1-0.6-3.2-0.6c-1.8,0-3.5,0.5-5.1,1.5
-                                                c-2.1,1.3-4.2,2.6-6.3,3.8c-4.7-1.6-10.8-3.6-15.6-5.3L160.9,1l-4.3,1.6l10.7,8.6c-1.5,0.7-3.1,1.4-4.6,2.1c-2.7-0.9-6-2-8.5-2.9
-                                                l-0.2-0.1l-2.8,1l3.7,5c-11.1,4.1-23.4,7.2-37.6,9.5c-8.4,1.4-17,2.2-24.8,2.7c0.9-10.1,1.9-16.9,5.4-26.8l0,0
-                                                C98.1,1.4,97.9,1,97.5,1l-1,0c-2.3,0-4.8,0.1-6.4,0.9L89.9,2l-0.1,0.2c-3.7,11.5-4.1,17.8-4.7,26.6C80.9,29,77,29,73.6,29
-                                                c-0.9,0-1.8,0-2.6,0c0.9-10.3,1.8-17.2,5.5-27.3v0C76.6,1.4,76.3,1,76,1l-1,0c-2.3,0-4.8,0.1-6.4,0.9L68.4,2l-0.1,0.2
-                                                c-4,12.3-4.2,18.4-4.7,26.7c-13-0.4-22.6-1.5-26.8-2.5l-0.5-0.1l-0.2,0.5c-0.1,0.3-0.3,0.7-0.4,1.2l-0.2,0.5l0.6,0.1
-                                                c4,1.1,13.9,2.6,27.3,3.3c-0.3,8.2,0.6,14,1.3,17.2c-1.1,2.4-3.6,6.3-8.1,6.3c-1,0-2.1-0.2-3.2-0.6c1.1-3.8,1.2-10.9-1.2-14.8
-                                                c-1.1-1.8-2.7-2.9-4.3-2.9c-0.7,0-1.4,0.2-2.1,0.7c-0.3-0.1-0.6-0.1-1-0.1c-2,0-6.1,0.9-9,4.3c-2.6,3.1-3.6,7.3-2.8,12.5
-                                                c-2.1,2.7-6.8,5-10.3,5c-0.5,0-0.9,0-1.3-0.1c-4.5-1.1-7.4-3.9-9.4-9c8.5-11.7,13.6-17.5,16.5-26C29.6,20.9,33,9.9,29,4.3
-                                                c-1.5-2.2-4-3.3-7.3-3.3c-4.1,0-8.5,2.2-12,6.1c-4.2,4.6-7,11.2-8.1,19.1c-1.4,9.8,0,14.6,2.8,22C6.9,55.1,11,60,15.9,62
-                                                c1.5,0.6,3.2,1,5,1c6,0,11.5-3.7,13.2-5c1.4,2.9,4.1,4.7,7.7,4.9c0.3,0,0.6,0,0.9,0c4.1,0,7.7-2,9.7-5.3c1.2,0.4,2.5,0.6,3.7,0.6
-                                                c3.8,0,7.2-1.9,9.8-5.3c0.2,0.5,0.3,1,0.5,1.4l0,0.1c0.1,0.2,0.2,0.5,0.4,0.9C69.4,61,74.8,63,79,63c1.6,0,3.2-0.3,4.7-0.8
-                                                c2.2-0.8,4.1-2.5,5.6-5.1c2.5,3.7,6.7,5.9,11.3,5.9c1.6,0,3.2-0.3,4.7-0.8c1.6-0.6,3-1.6,4.2-3.1c1.5,2.3,3.9,3.7,7.1,3.9
-                                                c0.3,0,0.6,0,0.9,0c4.1,0,7.7-2,9.7-5.4c0.8,0.2,1.5,0.2,2.3,0.2c2.7,0,5.5-1,7.9-2.8c2.2,7.1,7.7,7.9,10,7.9c0.8,0,1.5-0.1,2.3-0.2
-                                                c2.3-0.5,4.2-1.5,5.7-3.1c2.5,2.9,5.7,3.4,7.4,3.4c0.8,0,1.6-0.1,2.4-0.3c6.9-1.7,13.7-7,12.7-14.6c0.5,0.1,1.1,0.1,1.7,0.1
-                                                c1.4,0,2.6-0.2,3.5-0.4c-0.8,1.6-2.1,4.3-2.6,5.7c-0.8,2.4-0.6,4.7,0.6,6.5c1.2,1.8,3.3,2.9,5.8,3c0.2,0,0.4,0,0.7,0c0,0,0,0,0,0
-                                                c6.8,0,13.5-5.1,16.3-10C204.2,52.7,204.1,52.4,204.1,52z M24.3,9.2c1.1,1.3,1.5,4.1,0.9,7.8c-1.5,10.3-6.6,19.3-14.1,29.8
-                                                c-2-7.3-3.4-14.5-0.1-24c3.3-9.4,8.3-14.5,11.5-14.5C23.2,8.4,23.8,8.7,24.3,9.2z M43,50.4c1.2,2.5,3.3,4.6,5.9,6
-                                                c-1,0.9-2.2,1.4-3.4,1.4c-2,0-3.8-1.1-4.9-3c-2.1-3.5-1.2-8.6,1.6-11.7C41.6,45.6,41.9,48.1,43,50.4z M50.3,42.4
-                                                c1.8,2.5,1.8,7.7,0.8,11.3c-2.5-1.6-4.6-4.9-3.9-9.2c0.3-2,0.9-3.1,1.7-3.1C49.3,41.4,49.8,41.7,50.3,42.4z M81,59.3
-                                                c-0.6,0-1.2,0-1.8-0.1c-2-0.3-3.7-1.6-5.1-3.9c-2.7-4.6-3.9-12.7-3.4-23.1c3.5,0.1,7.1,0.2,10.9,0.2c0,0,0,0,0,0c1.1,0,2.2,0,3.4,0
-                                                c-0.3,9.7,1,17.2,2.8,21.9l0,0.1c0,0,0,0.1,0.1,0.1C87,56.6,85.4,59.3,81,59.3z M117.9,50.4c1.2,2.5,3.3,4.6,5.9,6
-                                                c-1,0.9-2.2,1.4-3.4,1.4c-2,0-3.8-1.1-4.9-3c-2.1-3.5-1.2-8.6,1.6-11.7C116.5,45.6,116.8,48.1,117.9,50.4z M125.2,42.4
-                                                c1.8,2.5,1.8,7.7,0.8,11.3c-2.5-1.6-4.6-4.9-3.9-9.2c0.3-2,0.9-3.1,1.7-3.1C124.2,41.4,124.7,41.7,125.2,42.4z"></path>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </header>
+<div> <!--  id="mm-page" -->
+<header>
+	<div class="menu-top hidden-xs">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 no-select">
+					<ul class="nav right">
+						<li><a href="#" class="language">RU</a></li>
+						<li><a href="#" class="language">AZ</a></li>
+					</ul>
+					<ul class="nav">
+						<li><a href="/about">About Lottour</a></li>
+						<li><a href="/contact">Contacts</a></li>
+					</ul>
+				</div>
+			</div> <!-- row -->
+		</div>
+	</div>
+	<div class="menu-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 no-select">
+					<nav class="navbar right">
+						<ul class="nav hidden-xs">
+							<li><a href="#/tours">Tours</a></li>
+							<li><a href="#/countries">Countries</a></li>
+							<li><a href="#/cities">Cities</a></li>
+							<li><a href="#/sights">Sights</a></li>
+						</ul>
+					</nav>
+					<button id="hamburger" class="hamburger hamburger--arrow-r visible-xs" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+					<a class="navbar-brand" href="/">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 203.02 62.02" class="logo"><path class="logo-svg" fill="#ffffff" d="M203 51v-2l-.9 1c-.8.8-5.53 6.7-10.8 6.7a6.12 6.12 0 0 1-6.3-4.6 6.27 6.27 0 0 1 1.5-6.3 3 3 0 0 0-.5-3.5l-.2-.2c-4.16 1.44-8.17-.18-7.2-4.9-5.52-.4-8.1.8-8.1.8s-.77 6.23 3.9 8.5c2.4 5.5-4.57 11-9.1 11a6.92 6.92 0 0 1-6.3-4c-2.43-5.18 1.6-16.8 1.6-16.8a56.2 56.2 0 0 0-7.8 1.4c-3.54 14.3-.37 16.6-.2 18a4.67 4.67 0 0 1-3.4 1.7c-2.4 0-4.9-2.2-5.9-4.3-1.4-3 1.6-16.8 1.6-16.8s-4.4.67-7.8 1.4c-2.26 10.92-1.24 11.35-1.6 12.5-2.2 3.36-6.5 4.12-8.4 3.3 1.1-3.8 1.2-10.9-1.2-14.9a5.36 5.36 0 0 0-4.3-2.9 3.52 3.52 0 0 0-2.1.7c-2.4-.5-7.2.8-10.1 4.3-2.7 3.2-3.75 8-2.2 14.6-1.3 1.8-3.3 3.07-7.5 2.6q-3-.45-5.1-3.9c-2.7-4.6-3.9-12.7-3.4-23 9.1-.3 18.1-1 26.8-2.1 39.5-4.9 59.1-15 73-24.2 1.2-.8 1.7-1.5 1.6-2.3-.1-1.1-1.4-1.7-2.4-2.1a8.66 8.66 0 0 0-3.2-.6 9.46 9.46 0 0 0-5.1 1.5c-2.1 1.3-4.2 2.6-6.3 3.8-4.7-1.6-10.8-3.6-15.6-5.3l-.2-.1-4.3 1.6 10.7 8.6c-1.5.7-3.1 1.4-4.6 2.1-2.7-.9-6-2-8.5-2.9l-.2-.1-2.8 1 3.7 5a200.15 200.15 0 0 1-37.6 9.5c-8.4 1.4-17 2.2-24.8 2.7.9-10.1 1.9-16.9 5.4-26.8a.45.45 0 0 0-.4-.7h-1c-2.3 0-4.8.1-6.4.9l-.2.1-.1.2C85 12.7 84.6 19 84 27.8c-5.77.33-13.3.2-14.1.2.9-10.3 1.8-17.2 5.5-27.3a.6.6 0 0 0-.5-.7h-1c-2.3 0-4.8.1-6.4.9l-.2.1-.1.2c-4 12.3-4.2 18.4-4.7 26.7-18.6-.56-27.3-2.6-27.3-2.6l-.8 2.2s8.6 2.36 27.9 3.4a69.17 69.17 0 0 0 1.3 17.2c-1.1 2.4-4.46 8.26-11.3 5.7 1.1-3.8 1.2-10.9-1.2-14.8a5.36 5.36 0 0 0-4.3-2.9 3.52 3.52 0 0 0-2.1.7 3.08 3.08 0 0 0-1-.1 12.54 12.54 0 0 0-9 4.3c-2.6 3.1-3.6 7.3-2.8 12.5-8.82 8.7-17.16 5.2-21-4.1 8.5-11.7 13.6-17.5 16.5-26C28.5 19.92 34.98 0 20.6 0 8.3 0-6.77 22.18 3.3 47.2 5.83 54.1 14.67 70.14 33 57c1.4 2.9 4.16 4.9 8.6 4.9a11.16 11.16 0 0 0 9.7-5.3c6.5 1.92 10.9-1.3 13.5-4.7A13.35 13.35 0 0 0 77.9 62c6.14 0 8.8-3.3 10.3-5.9A13.54 13.54 0 0 0 99.5 62a15 15 0 0 0 4.7-.8 9.62 9.62 0 0 0 4.2-3.1c1.5 2.3 4 3.9 8 3.9a11.06 11.06 0 0 0 9.7-5.4 13.13 13.13 0 0 0 10.2-2.6c2.2 7.1 7.92 8.55 12.3 7.7a10.65 10.65 0 0 0 5.7-3.1c8.1 9 24.7-2 22.5-11.5a16.46 16.46 0 0 0 5.2-.3c-.8 1.6-2.1 4.3-2.6 5.7a7.3 7.3 0 0 0 .6 6.5 7.5 7.5 0 0 0 6.5 3c6.8 0 13.5-5.1 16.3-10a1.16 1.16 0 0 0 .2-1zM10 45.8C3.67 25.74 15.48 6.5 21.4 7.3c8.07 1.13-1.24 26-11.4 38.5zm31.9 3.6a13.67 13.67 0 0 0 5.9 6 5.13 5.13 0 0 1-3.4 1.4 5.65 5.65 0 0 1-4.9-3c-2.1-3.5-1.2-8.6 1.6-11.7a10.82 10.82 0 0 0 .8 7.3zm7.3-8c1.8 2.5 1.8 7.7.8 11.3a9 9 0 0 1-3.9-9.2c.3-2 .9-3.1 1.7-3.1a2 2 0 0 1 1.4 1zm28.9 16.8q-3-.45-5.1-3.9c-2.7-4.6-3.9-12.7-3.4-23.1 3.82.16 8.22.24 14.3.2-.32 15.15 2.8 22.1 2.9 22.1-.9 2.1-2.44 5.5-8.7 4.7zm38.7-8.8a13.67 13.67 0 0 0 5.9 6 5.13 5.13 0 0 1-3.4 1.4 5.65 5.65 0 0 1-4.9-3c-2.1-3.5-1.2-8.6 1.6-11.7a10.82 10.82 0 0 0 .8 7.3zm7.3-8c1.8 2.5 1.8 7.7.8 11.3a9 9 0 0 1-3.9-9.2c.3-2 .9-3.1 1.7-3.1a2 2 0 0 1 1.4 1z" class="a"/></svg>
+					</a>
+				</div>
+			</div> <!-- row -->
+			<nav id="m-menu">
+				<ul>
+					<li><a href="/about">About Lottour</a></li>
+					<hr>
+					<li><a href="#/tours">Tours</a></li>
+					<li><a href="#/countries">Countries</a></li>
+					<li><a href="#/cities">Cities</a></li>
+					<li><a href="#/sights">Sights</a></li>
+					<hr>
+					<li><a href="/contact">Contacts</a></li>
+					<hr>
+					<li><a href="#" class="language">RU</a></li>
+					<li><a href="#" class="language">AZ</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<div class="owl-container">
+	<div class="owl-carousel">
+		<div class="owl-custom-slide" style="background-image: url('/img/owl-carousel/bled-lake.png')"></div>
+		<div class="owl-custom-slide" style="background-image: url('/img/owl-carousel/bratislava-castle.png')"></div>
+		<div class="owl-custom-slide" style="background-image: url('/img/owl-carousel/kotor1.png')"></div>
+		<div class="owl-custom-slide" style="background-image: url('/img/owl-carousel/serbia.png')"></div>
+	</div>
+	<div class="slogan no-select">
+		<h1 class="text-shadow">Discover Europe</h1>
+		<h2 class="text-shadow">Tours to the most interesting places in Europe</h2>
+	</div>
+</div>
+<section class="overview">
+	<div class="container">
+		<div class="row">
+			<h2>How it works</h2>
+			<div class="col-sm-4 col-xs-12">
+				<div class="overview-thumbnail"><img src="img/overview/search-tour.svg" alt="search tour"></div>
+				<div class="overview-text-holder">
+					<h3>Choose a tour</h3>
+					<p>Look through our list of the most attractive tours around European countries. Choose the best one, that fits all your desires and wishes.</p>
+				</div>
+			</div>
+			<div class="col-sm-4 col-xs-12">
+				<div class="overview-thumbnail"><img src="img/overview/send-request.svg" alt="send request"></div>
+				<div class="overview-text-holder">
+					<h3>Send request</h3>
+					<p>Our travel specialist will contact you as soon as possible in any convenient way for you. For your comfortable we have multilingual support.</p>
+				</div>
+			</div>
+			<div class="col-sm-4 col-xs-12">
+				<div class="overview-thumbnail"><img src="img/overview/discover-europe.svg" alt="discover europe"></div>
+				<div class="overview-text-holder">
+					<h3>Discover Europe</h3>
+					<p>Enjoy your trip while we care about you with our best professional chinese-speaking guides, comfortable buses and high-level hotels.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="best-tours">
+	<div class="container">
+		<div class="row">
+			<h2>Best tours</h2>
+			
+	</div>
+</section>
 
 	<div class="container">
 
 		<div class="row">
 
-			<div class="col-sm-8 col-sm-offset-2">
-				
-				<img class="img-responsive" src="img/preview.jpg" alt="Start HTML5 Template">
-				<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Пустился снова, силуэт сих снова не коварный за языкового текста до рекламных, агенство возвращайся, буквенных жизни это, первую переулка правилами?</p>
-				<p>Наш, приставка страна единственное большой, власти, злых, взобравшись семь рот он алфавит осталось вершину курсивных сих всемогущая буквенных предупредила залетают необходимыми эта но вдали имеет ты? Предупреждал повстречался, но которое!</p>
-				<p>Злых, знаках свою. Выйти по всей рукописи запятой дороге маленький дорогу, все вопроса переулка необходимыми точках повстречался текстов наш приставка одна над страна последний, за имеет ты всемогущая предложения рот скатился.</p>
-
+			<div class="col-lg-12">
+				<p>Some text</p>
 			</div>
 			
 		</div>
 
 	</div>
 	
-	<link rel="stylesheet" href="css/main.min.css">
-	<script src="js/scripts.min.js"></script>
-
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="copyright">© 2017 LotTour | All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+</footer>
+</div><!--  mm page -->
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/scripts.min.js"></script>
 </body>
 </html>
+
