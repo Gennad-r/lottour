@@ -4,7 +4,13 @@ console.log('script started');
 // deny images and links dragging
 $('img, a').on('dragstart', function(event) { event.preventDefault(); });
 //owl-caorusel function
- $(".owl-carousel").owlCarousel({
+var thumbsStatus = true;
+if ($(".overview")){thumbsStatus = false;}
+$(".owl-carousel").owlCarousel({
+	thumbs: thumbsStatus,
+	thumbImage: true,
+    thumbContainerClass: 'owl-thumbs',
+    thumbItemClass: 'owl-thumb-item',
  	items: 1,
  	loop: true,
  	autoplay: true
@@ -25,6 +31,7 @@ $("#hamburger").on("click", function () {
 });
 
 api.bind("open:start", function () {
+		$("#m-menu").css("display", "block");
 		$("#hamburger").addClass("is-active");
 		$("#hamburger").on("click", function () {
 			api.close();

@@ -40,7 +40,8 @@ gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
 		'app/libs/OwlCarousel2-2.2.1/dist/owl.carousel.js',
-		'node_modules/jquery.mmenu/dist/jquery.mmenu.all.js',
+		'app/libs/OwlCarousel2Thumbs/OwlCarousel2Thumbs.min.js',
+		'node_modules/jquery.mmenu/dist/jquery.mmenu.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
