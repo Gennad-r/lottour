@@ -1,11 +1,10 @@
 $(document).ready(function(){
 
-console.log('script started');
 // deny images and links dragging
 $('img, a').on('dragstart', function(event) { event.preventDefault(); });
 //owl-caorusel function
 var thumbsStatus = true;
-if ($(".overview")){thumbsStatus = false;}
+if (document.querySelector(".overview")){thumbsStatus = false;}
 $(".owl-carousel").owlCarousel({
 	thumbs: thumbsStatus,
 	thumbImage: true,
@@ -21,7 +20,8 @@ $("#m-menu").mmenu({
                   "pagedim-black"
                ],
                "offCanvas": {
-                  "position": "right"
+                  "position": "right",
+                  "pageSelector": "#mm-page"
                }
             });
 var api = $("#m-menu").data("mmenu");
@@ -45,7 +45,22 @@ api.bind("close:start", function () {
          console.log( "This panel is now opened: #" + $panel.attr( "id" ) );
       });
 
+// modal request window
+$("#tour-name").html($(".header-image-description h1").html());
+//$("#request-form").on("submit", function () { return false; });
 
-
-
+});
+$("#send-tour-request").on("click", function () {
+	$(".modal-outer-holder").removeClass("hidden");
+	$("#mm-page").addClass("blured");
+	$("#date").datepicker();
+});
+$(".modal-outer-holder").on("click", function (e) {
+	if (e.target.className === "modal-outer-holder") {
+	$(".modal-outer-holder").addClass("hidden");
+	$("#mm-page").removeClass("blured");
+	}
+});
+$( "#accordion" ).accordion({
+	heightStyle: "content"
 });
