@@ -1,5 +1,11 @@
 $(document).ready(function(){
-
+// deny logo link on home page
+if (document.querySelector(".overview")){
+	$("a.navbar-brand").removeAttr("href");
+	$("a.navbar-brand").on("click", function (e) {
+		e.preventDefault();
+	});
+}
 // deny images and links dragging
 $('img, a').on('dragstart', function(event) { event.preventDefault(); });
 //owl-caorusel function
