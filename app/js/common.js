@@ -54,8 +54,6 @@ api.bind("close:start", function () {
 // modal request window
 $("#tour-name").html($(".header-image-description h1").html());
 //$("#request-form").on("submit", function () { return false; });
-
-});
 $("#send-tour-request").on("click", function () {
 	$(".modal-outer-holder").removeClass("hidden");
 	$("#mm-page").addClass("blured");
@@ -69,4 +67,20 @@ $(".modal-outer-holder").on("click", function (e) {
 });
 $( "#accordion" ).accordion({
 	heightStyle: "content"
+});
+// filters show/hide
+
+$("#dropdown-filter").on("click", function () {
+	$(".menu").toggleClass("closed");
+});
+// reset checklist
+function resetBox() {
+	var boxes = $(".menu input");
+	for (var i = boxes.length - 1; i >= 0; i--) {
+		boxes[i].checked = false;
+	}
+}
+$("#reset").on("click", resetBox);
+
+
 });
