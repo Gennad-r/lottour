@@ -363,7 +363,9 @@ header
 		box-shadow: 0 1px 8px lighten($text-color, 0)
 		transition: box-shadow .2s ease-in-out
 .card-content
-	height: 8.5rem
+	overflow: hidden
+	padding: 1rem
+	position: relative
 	&:after
 		content: ""
 		position: absolute
@@ -391,10 +393,8 @@ header
 		display: block
 	.img-responsive
 		display: inline-block
-.card-content
-	overflow: hidden
-	padding: 1rem
-	position: relative
+.card-short
+	height: 8.5rem
 
 .card-details
 	margin: .4rem 0 .3rem
